@@ -1,0 +1,31 @@
+<hibernate-configuration>
+    <session-factory>
+        <!-- Database connection settings -->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5433/Final_Stepic</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">1</property>
+
+        <!-- SQL dialect -->
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+
+        <!-- Schema generation -->
+        <property name="hibernate.hbm2ddl.auto">create</property>
+
+        <!-- Show SQL and format it -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+
+        <!-- List of entity classes -->
+        <mapping class="org.model.User"/>
+        <mapping class="org.model.Teacher"/>
+        <mapping class="org.model.Student"/>
+        <mapping class="org.model.Course"/>
+        <mapping class="org.model.Achievement"/>
+        <mapping class="org.model.Chapter"/>
+        <mapping class="org.model.Lesson"/>
+        <mapping class="org.model.Step"/>
+        <mapping class="org.model.Attachment"/>
+        <mapping class="org.model.Comment"/>
+    </session-factory>
+</hibernate-configuration>
