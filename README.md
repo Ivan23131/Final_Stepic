@@ -1,6 +1,6 @@
-# SEPIC Converter Control Project
+# SEPIC C
 
-Этот проект представляет собой реализацию управления SEPIC (Single-Ended Primary Inductor Converter) с использованием Java и Hibernate для хранения данных и управления состоянием системы.
+Этот проект представляет собой реализацию БД STEPIC с использованием Java и Hibernate для хранения данных и создания структуры БД.
 
 ## Описание проекта
 
